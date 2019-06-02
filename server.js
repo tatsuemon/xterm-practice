@@ -5,7 +5,7 @@ const expressWs = require("express-ws")(app);
 const hostname = '127.0.0.1';
 const port = 8800;
 
-app.use(express.static(__dirname + '/src'));
+app.use(express.static(__dirname));
 
 // shell(terminal)のインスタンス化とdataの扱い
 expressWs.app.ws("/shell", function (ws, req) {
