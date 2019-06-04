@@ -1,5 +1,5 @@
 const express = require("express");
-const pty = require("pty.js");
+const pty = require("node-pty");
 const app = express();
 const expressWs = require("express-ws")(app);
 const hostname = '127.0.0.1';
